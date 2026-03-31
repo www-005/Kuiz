@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kuiz për Provime</title>
+<style>
+body {font-family: Arial; margin:0; background:#f1f5f9;}
+header {background:#0f172a;color:#fff;padding:15px;text-align:center;font-size:20px;}
+.container {padding:15px; max-width:900px; margin:auto;}
+.grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;}
+.btn {background:#2563eb;color:#fff;padding:15px;border:none;border-radius:8px;cursor:pointer;font-size:15px;}
+.btn:hover{background:#1d4ed8}
+.card {background:#fff;padding:15px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+input {width:100%;padding:10px;margin-top:10px;border-radius:6px;border:1px solid #ccc;}
+.nav{margin-bottom:10px}
+@media(max-width:600px){header{font-size:18px}.btn{padding:12px;font-size:14px}}
+</style>
+</head>
+<body>
+<header>Kuiz për Provime</header>
+<div class="container" id="app"></div>
+<script>
+const data = {
+"Teknologjite Multimediale": {
+"Ligjerata 1": {
+text: `HYRJE NË MULTIMEDIA
+
+Çka është multimedia?
+Multimedia është kombinim i disa mediumeve për komunikim më të pasur dhe më efektiv.<br></br>
+
+Definimi i multimedias
+
+• Multimedia është bashkimi i dy ose më shumë formave të medias (tekst,
+imazh/grafikë, audio, video, animacion) në një përmbajtje të vetme.<br></br>
+
+Kuptimi i teknologjive multimediale
+
+•Përdor tekste, audio, video, grafika, animacione
+•Krijim / manipulim / prezantim i përmbajtjes
+•Kombinon pajisje + softuer + platforma
+•Shpesh ruhet dhe transmetohet në formate digjitale (skedarë / kodekë / kontejnerë)<br></br>
+
+Rëndësia e multimedias
+
+1. Komunikim më efektiv
+2.Mësim më i pasur
+3. Angazhim & interaktivitet
+4.Përdorim në industri të ndryshme
+5. Mbajtje më e mirë e informacionit
+6.Argëtim & kreativitet
+7. Komunikim në biznes
+8.Akses global
+9.Marketing & reklamim
+10.Inovacion & zhvillim teknologjik<br></br>
+
+1. Komunikim më efektiv
+
+• Kombinimi i tekstit, imazheve, audios dhe videos e bën mesazhin më të qartë dhe
+më të kuptueshëm.
+• Marrësi e përpunon informacionin në më shumë se një kanal.<br></br>
+
+2. Mësim i përmirësuar
+
+• Përmbajtja vizuale/interactive e bën më të lehtë kuptimin e koncepteve.
+• Mbështet stile të ndryshme të të nxënit.<br></br>
+
+3. Angazhimi dhe interaktiviteti
+
+• Përmbajtja multimediale shpesh përfshin elemente interaktive, duke u mundësuar
+përdoruesve të angazhohen me materialin.
+• Ky interaktivitet rrit përfshirjen e përdoruesit dhe mund të çojë në një përvojë më
+të paharrueshme dhe më të këndshme.
+• Shembull: kuize, simulime, video me pyetje, aplikacione mësimore.<br></br>
+
+4. Përdorim në industri të ndryshme
+
+• Teknologjitë multimediale gjejnë zbatim në industri të ndryshme, duke përfshirë
+arsimin, biznesin, argëtimin, marketingun, shëndetësinë dhe shumë fusha të tjera.
+• Ato janë një mjet i gjithanshëm që mund të përshtatet për nevoja të ndryshme.<br></br>
+
+5. Mbajtje më e mirë e informacionit
+
+• Njerëzit priren ta mbajnë mend informacionin më mirë kur ai prezantohet përmes
+disa shqisave.
+• Multimedia angazhon si shqisën e të parit ashtu edhe atë të dëgjimit, duke e bërë
+më të mundshme që informacioni të kujtohet.<br></br>
+
+6. Argëtim dhe kreativitet
+
+• Në industrinë e argëtimit, multimedia është thelbësore për krijimin e përmbajtjeve
+tërheqëse si filmat, lojërat video dhe përvojat virtuale.
+• Ajo mundëson shprehje kreative dhe inovacion në mënyrën e tregimit të historive.<br></br>
+
+7. Komunikim më i mirë në biznes
+
+• Në botën e biznesit, multimedia përdoret për prezantime, materiale trajnimi dhe
+marketing.
+• Ajo ndihmon në përcjelljen e mesazheve më efektivisht, qoftë për komunikim të
+brendshëm apo për të arritur te klientët.<br></br>
+
+8. Akses global
+
+• Me rritjen e internetit, përmbajtja multimediale mund të shpërndahet dhe të
+aksesohet lehtësisht në mbarë botën.
+• Kjo lehtëson komunikimin dhe shkëmbimin e informacionit në shkallë të gjerë.<br></br>
+
+9. Ndikim në marketing dhe reklamim
+
+• Multimedia luan një rol kyç në fushatat e reklamimit dhe marketingut.
+• Videot, grafikat dhe përmbajtja interaktive janë mjete të fuqishme për të tërhequr
+vëmendjen e audiencës dhe për të përcjellë mesazhe marketingu.<br></br>
+
+10. Inovacion dhe avancim teknologjik
+
+• Fusha e multimedias zhvillohet vazhdimisht, duke nxitur inovacionin në teknologji.
+• Kjo çon në zhvillimin e mjeteve, softuerëve dhe platformave të reja, të cilat i rrisin
+edhe më shumë aftësitë dhe ndikimin e multimedias.<br></br>
+
+Historiku i multimedias
+
+• Multimedia daton që nga viti 1950 por, nëse flasim për historikun e multimedias, atë mund
+ta kategorizojmë në 7 grupe:<br></br>
+
+1. Zhvillimi i hershëm (1950-1970)
+2. Lindja e Multimedias Interaktive (1980)
+3. Multimedia nëArsim (1980-1990)
+4. Rritja e Internetit (1990)
+5. Shpërthimi i Mediave Digjitale (2000-vazhdon)
+6. RealitetiVirtual dheAugmented (VR/AR) (2010-vazhdon)
+7. Integrimi i InteligjencësArtificiale (sot)<br></br>
+
+1. Zhvillimi i hershëm
+• Koncepti i multimedisë nisi të formohej në mesin e shekullit të 20, me
+eksperimente të hershme që kombinonin tekst, imazhe dhe tinguj.
+• Në vitet 1960-1970, kërkuesit dhe artistët eksploruan mënyra për të integruar
+forma të ndryshme të medias në instalacione artistike dhe projekte edukative.<br></br>
+
+2. Lindja e multimedias interaktive
+
+• Në vitin 1980, doli multimedia interaktive me arrdhjen e kompjuterëve personalë.
+• Teknologjia CD-ROM shënoi një hap të rëndësishëm, duke lejuar ruajtjen dhe
+rikthimin e sasive të mëdha të përmbajtjes multimediale.<br></br>
+
+3. Multimedia në arsim
+
+• Sektori arsimor e pranoi multimedian për përvoja të mësimit interaktiv. CD-ROM-
+et u përdorën për të ofruar përmbajtje edukative në një format më tërheqës.<br></br>
+
+• HyperCard, një aplikacion softueri përApple Macintosh, luajti një rol në zhvillimin
+e hershëm të multimedis.<br></br>
+
+4. Rritja e Internetit
+
+• Zhvillimi i Internetit në fillim të viteve 1990 solli multimedian në një audienca më
+të gjerë.
+• Integrimi i elementeve multimediale, si imazhet dhe më vonë videot, u bë i
+zakonshëm në dizajnin e uebit.<br></br>
+
+5. Shpërthimi i mediave digjitale
+
+• Në vitet 2000 shihet një përhapje e mediave digjitale, me rritjen e shërbimeve të
+transmetimit, platformave online të videos dhe mediave sociale.
+• Ardhja e smartphone-ve dhe internetit të shpejtë shtoi konsumin e përmbajtjes
+multimediale në nivel global.<br></br>
+
+6. Realiteti Virtual dhe Augmented
+
+• Në vitet 2010 u integrua realiteti virtual dhe augmented në përvojat multimediale,
+duke ofruar përmbajtje interaktive.
+• TeknologjitëVR dhe AR kanë gjetur aplikime në lojëra, arsim, kujdes shëndetësor
+dhe fusha të tjera.<br></br>
+
+7. Inteligjenca Artificiale
+
+• Tendencat e tanishme përfshijnë integrimin e inteligjencës artificiale (AI) në
+krijimin e përvojave multimediale të personalizuara dhe interaktive.<br></br>
+
+Karakteristikat e multimedias
+
+1. Kontrollohet nga kompjuteri
+2. E integruar
+3. Interaktive
+4. Prezantohet në mënyrë digjitale<br></br>
+
+1. Kontrollohet nga kompjuteri
+
+• Krijimi i përmbajtjeve multimediale bëhet duke përdorur kompjuterin dhe
+aplikacionet e ndryshme kompjuterike
+• Shpërndarja e informacionit bëhet mes rrjetit kompjuterik
+• Prezantimi i informacionit bëhet duke përdorur në mënyrë direkte kompjuterin
+dhe pajisjet kompjuterike<br></br>
+
+2. E integruar
+
+• Të gjitha elementet multimediale (audio, video, teksti, grafika, animacioni) që
+përdoren në sistem duhet në një mënyrë të jenë të integruara mes veti.
+• Çdo pajisje si mikrofoni ose kamera është e konektuar në një kompjuter dhe
+kontrollohet nga një person.<br></br>
+
+3. Interaktive
+
+• Nga fillimi e deri te përfundimi i një prezantimi multimedial i gjithë kontrolli është
+mbi përdoruesin.
+• Nëse flasim për një ligjeratë e cila është e incizuar më parë, studenti e shikon atë,
+e fillon dhe e ndalon kur të ketë nevojë.
+• Në anën tjetër nëse flasim për një ligjeratë aktuale, është një person (ligjeruesi në
+këtë rast), I cili e kontrollon të gjithë procesin.
+• Pra, interaktiviteti është i domosdoshëm nga njëra palë ose nga tjetra.<br></br>
+
+4. Prezantohet në mënyrë digjitale
+
+• Realizohet transformimi i një sinjali analog në atë digjital.<br></br>
+
+Elementet e multimedias
+
+• Multimedia nuk mund të qëndrojë si e vetme. Ajo paraqet një koleksion të
+mediave të cilat të lidhura së bashku krijojnë multimedian. Këto media të cilat
+ndryshe njihen edhe si elementet e multimedias ndahen në dy grupe kryesore:
+1. Elementet multimediale statike (teksti, grafika)
+2. Elementet multimediale dinamike (animacioni, audio, video)<br></br>
+
+Kategorizimi i multimedias
+
+• Multimedia mund të kategorizohet në dy grupe:
+1. Multimedia lineare
+2. Multimedia jo-lineare<br></br>
+
+Multimedia Lineare
+
+• Multimedia lineare përfshin përmbajtje që prezantohet në një rend, një plan të
+paracaktuar.
+• Përdoruesit përjetojnë përmbajtjen në një progresion të caktuar, zakonisht nga
+fillimi në fund, pa mundësinë për të zgjedhur rradhën ose rrugën e tyre të
+interaksionit.<br></br>
+
+Karakteristikat e multimedias lineare
+
+Përmbajtja ndjek një kohë të paracaktuar.
+Përdoruesit nuk kanë kontroll të kufizuar ose aspak mbi progresionin e përmbajtjes.
+Shembuj përfshijnë transmetimet televizive tradicionale, video lineare dhe disa lloje
+prezentimesh.<br></br>
+
+Avantazhet dhe disavantazhet e
+multimedias lineare<br></br>
+
+•Avantazhet:
+1. Audienca fokusohet në një koncept specifik
+2. Prezantimi është i organizuar
+3. Prezantuesi e kontrollon të gjithë rrjedhën e prezantimit
+4. Është efektive kur duam që audienca jonë të absorbojë informacionin në mënyrë
+sa më të mirë të mundshme
+•Disavantazhet:
+1. Interaksion minimal ose aspak interaksion
+2. Audienca nuk ka të drejtë të ndërhyjë në temën për të cilën flitet<br></br>
+
+Multimedia Jo-Lineare
+
+• Multimedia jo-lineare lejon përdoruesit të ndërveprojnë me përmbajtjen në një
+mënyrë më fleksibile.
+• Përdoruesit kanë lirinë të lundrojnë dhe të zgjedhin rradhën në të cilën përdorin
+ndryshme seksione ose elemente të prezantimit multimedi.<br></br>
+
+Karakteristikat e multimedias jo-lineare
+
+Përdoruesit mund të lundrojnë lirshëm midis seksioneve ose elementeve të
+ndryshme.
+Përmbajtja është organizuar në mënyrë që lejon rrugët e ndryshme ose lidhjet
+elektronike.
+Shembuj përfshijnë faqe interneti interaktive, video lojëra dhe aplikacione
+multimediale.<br></br>
+
+Avantazhet dhe disavantazhet e
+multimedias jo-lineare
+•Avantazhet:
+1. Personi ka kontroll të plotë në atë që bën dhe mund ta shfrytëzojë këtë
+multimedia sipaspreferencave të tij
+•Disavantazhet:
+1. Kërkon që përdoruesi të ketë të paktën njohuri bazike në përdorimin e kompjuterit
+2. Nëse nuk përdoret si duhet mund të jetë jo e organizuar mirë<br></br>
+
+Benefitet e multimedias
+
+1. Deeper understanding
+2. Improved problem solving
+3. Increased positive emotions
+4. Access to a variety of informartion<br></br>
+
+Sfidat e multimedias
+
+1. Copyright dhe përdorimi i drejtë
+2. Accessibility
+3. Sfidat teknike
+4. Konsiderata etike<br></br>
+
+1. Copyright dhe përdorimi i drejtë
+
+• Kuptoni kompleksitetin e copyright dhe përdorimit të drejtë në krijimin e
+multimedisë.
+• Respektoni të drejtat e pronës intelektuale dhe realizoni përdorim të drejtë të
+multimedias për qëllime edukative dhe transformative.<br></br>
+
+2. Accessibility
+
+Vendosni prioritet në aksesibilitet për të siguruar përmbajtjen tuaj.
+Konsideroni nevojat e ndryshme si problemet vizuale, auditive dhe motorike.
+Përdorni si titrat, tekstet alternative dhe navigim me tastierë për një përvojë
+multimediare më të përshtatshme.<br></br>
+
+3. Sfidat teknike
+
+• Pranoni pengesat teknike në prodhimin e multimedisë.
+• Adresoni çështjet lidhur me format e skedarëve, kompatibilitetin dhe kërkesat
+specifike të platformës.
+• Mbani veten në dijeni për teknologjitë që evoluojnë për të kapërcyer sfidat teknike
+në mënyrë efektive.<br></br>
+
+4. Konsiderata etike
+
+• Hidhini një sy dimensioneve etike të krijimit të multimedis.
+• Konsideroni ndikimin e përmbajtjes në audiencat e ndryshme.
+• Mbani standarde etike në tregimin e historive, përfaqësimin dhe përdorimin e
+teknologjive të reja për të krijuar përmbajtje të saktë.<br></br>
+
+Shpërndarja e multimedias
+
+• Përmbajtjet multimediale mund të shpërndahen në dy forma të ndyshme:
+1. Metodat tradicionale të shpërndarjes
+2. Shpërndarja mes internetit<br></br>
+
+Shpërndarja tradicionale
+
+• Shpërndarja tradicionale e multimedias përfshin DVD dhe CD.
+• DVD dhe CD mund të përdoren për shpërndarjen e video përmbajtjeve të
+ndryshme të cilat
+• mund të lëshohen në kompjuterët personal dhe të ndiqen në çdo kohë.
+• Problemi me këtë shpërndarje është në momentin e azhurimit të përmbajtjes.<br></br>
+
+Shpërndarja përmes internetit
+
+• Mënyra më e thjeshtë dhe më efektive e shpërndarjes së multimedias dhe çdo
+përmbajtjes tjetër sot është interneti.
+• Problemi i vetëm qëndron në atë se kërkon njohuri të mira sa i përket përdorimit
+të kompjuterit dhe rrjetave kompjuterike nga të dyja palët, edhe pala dorëzuese
+edhe ajo pranuese.` ,
+quiz: [
+{q:"Çka është multimedia?",a:""},
+{q:"Cilat janë elementet kryesore të multimedias?",a:""},
+{q:"Çfarë përfshin teknologjia multimediale?",a:""},
+{q:"Pse multimedia është e rëndësishme në komunikim?",a:""},
+{q:"Si ndihmon multimedia në mësim?",a:""},
+{q:"Çfarë është interaktiviteti në multimedia?",a:""},
+{q:"Në cilat fusha përdoret multimedia?",a:""},
+{q:"Pse multimedia ndihmon në mbajtjen e informacionit?",a:""},
+{q:"Kur fillon multimedia-Historiku?",a:""},
+{q:"Çfarë janë VR dhe AR?",a:""},
+{q:"Cilat janë karakteristikat kryesore të multimedias?",a:""},
+{q:"Çfarë do të thotë multimedia është e integruar?",a:""},
+{q:"Çfarë do të thotë multimedia është interaktive?",a:""},
+{q:"Cilat janë dy llojet e multimedias?",a:""},
+{q:"Çfarë është multimedia lineare-Jep shembull?",a:""},
+{q:"Çfarë është multimedia jo-lineare-Jep shembull?",a:""},
+{q:"Cilat janë sfidat kryesore të multimedias?",a:""},
+{q:"Çfarë është copyright?",a:""},
+{q:"Çfarë është accessibility?",a:""},
+{q:"Si shpërndahet multimedia?",a:""},
+{q:"Cili është problemi i metodave tradicionale?",a:""},
+{q:"Cila është mënyra më e mirë sot?",a:""},
+{q:"Cilat janë elementet statike të multimedias?",a:""},
+{q:"Cilat janë elementet dinamike?",a:""}
+
+
+]
+}
+}
+};
+
+let state={subject:null,lecture:null,index:0,score:0};
+
+function renderDashboard(){
+let html='<div class="grid">';
+for(let s in data){html+=`<button class="btn" onclick="openSubject('${s}')">${s}</button>`}
+html+='</div>';
+document.getElementById('app').innerHTML=html;
+}
+
+function openSubject(s){state.subject=s;
+let html='<div class="nav"><button onclick="renderDashboard()">⬅</button></div><div class="grid">';
+for(let l in data[s]){html+=`<button class="btn" onclick="openLecture('${l}')">${l}</button>`}
+html+='</div>';
+document.getElementById('app').innerHTML=html;}
+
+function openLecture(l){state.lecture=l;
+let lec=data[state.subject][l];
+let html=`<div class="nav"><button onclick="openSubject('${state.subject}')">⬅</button></div>
+<div class="card"><h3>${l}</h3><p>${lec.text}</p>
+<button class="btn" onclick="startQuiz()">Fillo Kuizin</button></div>`;
+document.getElementById('app').innerHTML=html;}
+
+function startQuiz(){state.index=0;state.score=0;showQ();}
+
+function showQ(){let quiz=data[state.subject][state.lecture].quiz;
+let q=quiz[state.index];
+let html=`<div class="card"><h3>Pyetja ${state.index+1}</h3><p>${q.q}</p>
+<input id="ans" placeholder="Shkruaj pergjigjen">
+<br><br><button class="btn" onclick="nextQ()">Tjetra</button></div>`;
+document.getElementById('app').innerHTML=html;}
+
+function nextQ(){let quiz=data[state.subject][state.lecture].quiz;
+let user=document.getElementById('ans').value.toLowerCase();
+let correct=quiz[state.index].a.toLowerCase();
+if(user.includes(correct.substring(0,10))) state.score++;
+state.index++;
+if(state.index<quiz.length){showQ()} else {endQuiz()}}
+
+function endQuiz(){let html=`<div class="card"><h2>Rezultati: ${state.score}/${data[state.subject][state.lecture].quiz.length}</h2>
+<button class="btn" onclick="openLecture('${state.lecture}')">Kthehu</button></div>`;
+document.getElementById('app').innerHTML=html;}
+
+renderDashboard();
+</script>
+</body>
+</html>
